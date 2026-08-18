@@ -2162,3 +2162,573 @@ button {
     }
 
 }
+/* =====================================================
+   STUDENT WEBSITES
+===================================================== */
+
+.student-websites {
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(0, 120, 255, 0.035),
+            transparent
+        );
+}
+
+
+/* FORM CARD */
+
+.website-form-card {
+
+    background:
+        rgba(5, 25, 48, 0.75);
+
+    border:
+        1px solid
+        rgba(0, 190, 255, 0.16);
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    margin-bottom: 15px;
+
+    box-shadow:
+        0 10px 40px
+        rgba(0, 100, 255, 0.06);
+}
+
+
+/* FORM */
+
+.website-form {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        auto;
+
+    gap: 10px;
+
+    align-items: end;
+}
+
+
+/* INPUT GROUP */
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.input-group label {
+
+    color:
+        rgba(255, 255, 255, 0.65);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    display: none;
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0 14px;
+
+    border:
+        1px solid
+        #d7e2ef;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.98);
+
+    color:
+        #102a43;
+
+    font-family:
+        "Be Vietnam Pro",
+        sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition:
+        0.25s ease;
+}
+
+
+.input-group input::placeholder {
+
+    color:
+        #8497b5;
+}
+
+
+.input-group input:focus {
+
+    border-color:
+        #1687ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(0, 150, 255, 0.1);
+}
+
+
+/* ADD BUTTON */
+
+.add-website-btn {
+
+    height: 40px;
+
+    padding:
+        0 18px;
+
+    border:
+        0;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #064ca3,
+            #087cff
+        );
+
+    color:
+        white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-family:
+        "Be Vietnam Pro",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 100, 255, 0.2);
+
+    transition:
+        0.25s ease;
+}
+
+
+.add-website-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 150, 255, 0.35);
+}
+
+
+.add-website-btn:active {
+
+    transform:
+        translateY(0);
+}
+
+
+.btn-arrow {
+
+    font-size: 15px;
+
+    transition:
+        0.25s ease;
+}
+
+
+.add-website-btn:hover
+.btn-arrow {
+
+    transform:
+        translateX(3px);
+}
+
+
+/* MESSAGE */
+
+.website-message {
+
+    margin-top: 10px;
+
+    color:
+        #0c9f62;
+
+    font-size: 10px;
+
+    min-height: 15px;
+
+    opacity: 0;
+
+    transform:
+        translateY(-3px);
+
+    transition:
+        0.25s ease;
+}
+
+
+.website-message.show {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+
+
+.website-message.error {
+
+    color:
+        #ff667a;
+}
+
+
+/* =====================================================
+   WEBSITE LIST
+===================================================== */
+
+.website-list {
+
+    border-top:
+        1px solid
+        rgba(0, 190, 255, 0.12);
+}
+
+
+/* WEBSITE ITEM */
+
+.website-item {
+
+    min-height: 74px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding:
+        14px 0;
+
+    border-bottom:
+        1px solid
+        rgba(0, 190, 255, 0.10);
+
+    transition:
+        0.25s ease;
+}
+
+
+.website-item:hover {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 150, 255, 0.03),
+            transparent
+        );
+}
+
+
+/* WEBSITE INFO */
+
+.website-info {
+
+    min-width: 0;
+}
+
+
+.website-name {
+
+    display: block;
+
+    color:
+        #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+
+.website-url {
+
+    display: block;
+
+    color:
+        #087cff;
+
+    font-size: 10px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    max-width:
+        700px;
+
+    transition:
+        0.25s ease;
+}
+
+
+.website-url:hover {
+
+    color:
+        var(--cyan);
+
+    text-decoration:
+        underline;
+}
+
+
+/* ACTIONS */
+
+.website-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* ACTION BUTTON */
+
+.website-action {
+
+    border: 0;
+
+    border-radius: 9px;
+
+    padding:
+        9px 13px;
+
+    font-family:
+        "Be Vietnam Pro",
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+}
+
+
+/* OPEN */
+
+.website-open {
+
+    color:
+        #064b89;
+
+    background:
+        #e7f2fc;
+}
+
+
+.website-open:hover {
+
+    background:
+        #cfe8fb;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* EDIT */
+
+.website-edit {
+
+    color:
+        #b87900;
+
+    background:
+        #fff5d9;
+}
+
+
+.website-edit:hover {
+
+    background:
+        #ffe9ad;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* DELETE */
+
+.website-delete {
+
+    color:
+        #dc3545;
+
+    background:
+        #fde7ea;
+}
+
+
+.website-delete:hover {
+
+    background:
+        #fbd0d5;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* EMPTY */
+
+.website-empty {
+
+    text-align:
+        center;
+
+    padding:
+        40px 20px;
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+    border-bottom:
+        1px solid
+        rgba(0, 190, 255, 0.1);
+}
+
+
+/* =====================================================
+   WEBSITE FORM EDIT MODE
+===================================================== */
+
+.website-form-card.editing {
+
+    border-color:
+        rgba(255, 209, 102, 0.35);
+
+    box-shadow:
+        0 0 30px
+        rgba(255, 209, 102, 0.05);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .website-form {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .add-website-btn {
+
+        width: 100%;
+    }
+
+
+    .website-item {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .website-actions {
+
+        justify-content:
+            flex-start;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .website-actions {
+
+        flex-wrap:
+            wrap;
+
+    }
+
+
+    .website-action {
+
+        flex: 1;
+
+        min-width: 80px;
+
+    }
+
+}
